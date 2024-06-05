@@ -87,7 +87,7 @@ proxy-groups:
   - {name: 📟 电报消息, <<: *a3}
   - {name: 🐦 推特服务, <<: *a3}
   - {name: 🎮 游戏平台, <<: *a3}
-  - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
+  - {name: 🆎 AdBlock, type: select, proxies: [DIRECT, REJECT]}
   - {name: 🐟 兜底分流, <<: *a3}
   
 #节点分组
@@ -123,7 +123,7 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
-  - RULE-SET,Ad,🆎 AdBlock,DIRECT
+  - RULE-SET,Ad,🆎 AdBlock
   - RULE-SET,OpenAi,🤖 OpenAi
   - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,Bahamut,📺 哔哩哔哩
