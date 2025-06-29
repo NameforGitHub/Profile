@@ -74,7 +74,7 @@ proxy-providers:
     path: ./proxy_providers/sub1.yaml
   Sub2:
     <<: *a1
-    url: https://t.me/ddgksf2021.yaml
+    url: https://pjq5q.no-mad-world.club/link/S3QVD60dlpuIIwZa?clash=3&extend=1
     # URL后面填写格式: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
     path: ./proxy_providers/sub2.yaml
     
@@ -93,7 +93,7 @@ proxy-groups:
   - {name: 📟 电报消息, <<: *a3}
   - {name: 🐦 推特服务, <<: *a3}
   - {name: 🎮 游戏平台, <<: *a3}
-  - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
+  - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
   - {name: 🐟 兜底分流, <<: *a3}
   
 #节点分组
